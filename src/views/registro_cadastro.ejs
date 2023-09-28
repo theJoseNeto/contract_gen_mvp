@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Gerador de Contrato - Registro e Login</title>
+    <style>
+        body {
+            font-family: 'San Francisco', 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f1f1f1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 25px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .container p {
+            color: #2c2cf9; 
+            font-size: 80%;
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                flex-direction: row;
+            }
+        }
+
+        label {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        input[type="email"],
+        input[type="password"],
+        textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 25px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            background-color: #333;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius:25px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #2a2a2a;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        form {
+            margin: 10px;
+        }
+    </style>
+
+    <script>
+        function simulateLogin(event) {
+            event.preventDefault();
+            window.location.href = "/home";
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <h2>Login</h2>
+            <form method="get" id="login-form" action="/home" onsubmit="simulateLogin(event)">
+                <input type="email" id="login-username" name="login-username" class="input-field" placeholder="Email">
+
+                <input type="password" id="login-password" name="login-password" class="input-field" placeholder="Senha">
+                <br>
+                <input type="submit" value="Entrar" class="submit-button">
+            </form>
+
+            <p><strong>Esqueci minha senha.</strong></p>
+        </div>
+
+        <!-- <div>
+            <h2>Registro</h2>
+            <form method="get" id="login-form" action="/home" onsubmit="simulateLogin(event)">
+
+                <label for="register-email">Email:</label>
+                <input type="email" id="register-email" name="register-email" class="input-field">
+
+                <label for="register-password">Senha:</label>
+                <input type="password" id="register-password" name="register-password" class="input-field">
+                <br>
+
+                <input type="submit" value="Registrar" class="submit-button">
+
+            </form>
+        </div> -->
+    </div>
+
+</body>
+
+</html>

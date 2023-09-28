@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Escolha seu serviço</title>
+  <link rel="stylesheet" type="text/css" href="/css/styles.css">
+
+
+  <style>
+    body {
+      font-family: 'San Francisco', 'Helvetica Neue', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f1f1f1;
+      overflow-x: hidden;
+    }
+
+    main {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      align-items: center ;
+      justify-content: center;
+      flex-direction: column;
+
+    }
+
+    .container {
+
+      width: 40%;
+      background-color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 20px;
+      border-radius: 25px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    select {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 25px;
+    }
+
+
+    input[type="submit"] {
+      width: 100%;
+      background-color: #333;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      border-radius: 25px;
+
+    }
+
+    input[type="submit"]:hover {
+      background-color: #2a2a2a;
+    }
+  </style>
+
+</head>
+
+<body>
+
+
+  <main>
+    <div class="container">
+      <h1>Escolha seu serviço</h1>
+
+      <form action="/escolher" method="post">
+
+        <select name="tipoDeServico">
+          <option value="aluguel">Aluguel</option>
+          <option value="servico">Prestação de Serviço</option>
+        </select>
+
+        <input type="submit" value="Escolher">
+      </form>
+    </div>
+  </main>
+</body>
+
+</html>

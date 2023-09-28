@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Gerador de Contrato</title>
+    <link rel="stylesheet" href="/css/styles.css">
+
+
+    <style>
+        body {
+  font-family: 'San Francisco', 'Helvetica Neue', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f1f1f1;
+}
+
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 500px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+}
+
+input[type="submit"] {
+    width: 100%;
+  background-color: #2a2a2a;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #2a2a2a;
+}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form method="post" action="/servico">
+           
+            <input type="text" id="cliente" name="contratante" class="input-field" placeholder="Nome do cliente"> 
+           
+            <input type="text" id="endereco" name="endereco" class="input-field" placeholder="Seu endereço">
+            
+            <input type="text" id="cpf" name="cpf" class="input-field" placeholder="seu CPF">
+            
+            <input type="submit" value="Gerar Contrato" class="submit-button">
+        </form>
+    </div>
+</body>
+
+</html>
