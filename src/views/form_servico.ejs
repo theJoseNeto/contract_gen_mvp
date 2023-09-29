@@ -2,115 +2,77 @@
 <html>
 
 <head>
-  <title>Gerador de Contrato</title>
-  <link rel="stylesheet" href="/css/styles.css">
+    <title>Gerador de Contrato</title>
+    <link rel="stylesheet" href="/css/styles.css">
 
 
-  <style>
-    body {
-      font-family: 'San Francisco', 'Helvetica Neue', Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f1f1f1;
-    }
+    <style>
+        body {
+  font-family: 'San Francisco', 'Helvetica Neue', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f1f1f1;
+}
 
 
-    .container {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      max-width: 500px;
-      margin: 50px auto;
-      background-color: #fff;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 500px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
-    label {
-      font-weight: bold;
-      margin-top: 10px;
-    }
+label {
+  font-weight: bold;
+  margin-top: 10px;
+}
 
-    input[type="text"],
-    input[type="email"],
-    textarea {
-      width: 100%;
-      padding: 12px;
-      margin: 8px 0;
-      box-sizing: border-box;
-      border: 1px solid #ccc;
-      border-radius: 25px;
-    }
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+}
 
-    input[type="submit"] {
-      width: 100%;
-      background-color: #2a2a2a;
-      color: white;
-      padding: 14px 20px;
-      margin: 8px 0;
-      border: none;
-      border-radius: 25px;
-      cursor: pointer;
-    }
+input[type="submit"] {
+    width: 100%;
+  background-color: #2a2a2a;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
 
-    input[type="submit"]:hover {
-      background-color: #2a2a2a;
-    }
-
-
-    nav {
-      background-color: #2a2a2a;
-      height: 50px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .home-button {
-      margin-left: 10px;
-      color: white;
-      font-weight: bold;
-      text-decoration: none;
-    }
-
-    .home-button:hover {
-      transform: scale(1.2);
-      transition: transform 0.3s ease;
-    }
-
-
-    .icon {
-      position: fixed;
-      bottom: 50px;
-      right: 50px;
-      width: 50px;
-      height: 50px;
-    }
-  </style>
+input[type="submit"]:hover {
+  background-color: #2a2a2a;
+}
+    </style>
 </head>
 
 <body>
-
-  <nav>
-    <a href="/home" class="home-button">Voltar</a>
-  <!-- </nav>
-  <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F1.bp.blogspot.com%2F-PM8_Rig8V0M%2FXxFkv-2f3hI%2FAAAAAAAACSU%2FvB1BqbuhFCMyJ8OGCVstFiMLFmavCLqrwCPcBGAYYCw%2Fs1600%2Fwhatsapp-logo-1.png&f=1&nofb=1&ipt=7fcb88136930c6dd78dd59d2059aabbf55341bf7b4056f1a61984e85f0605589&ipo=images"
-  alt="Seu ícone" class="icon"> -->
-
-
-  <div class="container">
-    <form method="post" action="/servico">
-
-      <input type="text" id="cliente" name="contratante" class="input-field" placeholder="Nome do cliente">
-
-      <input type="text" id="endereco" name="endereco" class="input-field" placeholder="Seu endereço">
-
-      <input type="text" id="cpf" name="cpf" class="input-field" placeholder="seu CPF">
-
-      <input type="submit" value="Gerar Contrato" class="submit-button">
-    </form>
-  </div>
+    <div class="container">
+        <form method="post" action="/servico">
+           
+            <input type="text" id="cliente" name="contratante" class="input-field" placeholder="Nome do cliente"> 
+           
+            <input type="text" id="endereco" name="endereco" class="input-field" placeholder="Seu endereço">
+            
+            <input type="text" id="cpf" name="cpf" class="input-field" placeholder="seu CPF">
+            
+            <input type="submit" value="Gerar Contrato" class="submit-button">
+        </form>
+    </div>
 </body>
 
 </html>
